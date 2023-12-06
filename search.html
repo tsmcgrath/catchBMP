@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>BMP Site Search</title>
+	<meta charset="utf-8" />
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <link href="search.css" rel="stylesheet" type="text/css">
+	<script src="lunr_index.js"></script>
+	<script src="lunrclient.js"></script>
+	<link href="style.css" media="screen" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <div id="wrapper">
+   <div id="header">
+    <div id="logo">
+     <h1>
+      <a href="/BMPStaging/index.html">
+       Best Management Practices
+      </a>
+     </h1>
+     <p>
+      For the Conservation of Texas Aquatic Ecosystems
+     </p>
+    </div>
+    <!-- end #logo -->
+    <div id="menu">
+     <ul>
+      <li class="active">
+       <a href="/BMPStaging/index.html">
+        Home
+       </a>
+      </li>
+      <li>
+       <a href="/BMPStaging/BMPIndex.html">
+        BMPs Index
+       </a>
+      </li>
+
+     </ul>
+    </div>
+    <!-- end #menu -->
+   </div>
+    <div id="page">
+      <div id="header-pic">
+      </div>
+      <div id="content">
+      <div class="post">
+        <h1 class="title">
+	         Search
+      </h1>
+      <p>Enter a search term, e.g., Revetment</p>
+	<form id="lunrSearchForm" name="lunrSearchForm">
+		<input class="search-input" name="q" placeholder="Enter search term" type="text"> <input type="submit" value="Search">
+	</form>
+	<div class="loading" id="loading-div">
+		<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+		<span class="sr-only">Loading...</span>
+    </div>
+    </div>
+	</div>
+	<p>Search results will be written below:</p>
+	<div class="resultCount" id="resultCount"></div>
+	<div id="searchResults"></div>
+</body>
+</html>

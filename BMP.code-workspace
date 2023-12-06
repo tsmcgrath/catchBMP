@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../BMPTest"
+		},
+		{
+			"path": "../BMPUtilities"
+		}
+	],
+	"settings": {
+		"python.pythonPath": "/Users/Tim/.virtualenvs/BMPStaging-JszHndvp/bin/python",
+		"python.linting.flake8Args": [
+			"\"python.linting.flake8Args\": [     \"--max-line-length=120\",     \"--ignore=E402,F841,F401,E302,E305\", ],"
+		]
+	}
+}
